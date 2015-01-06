@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+        Hello
+    </title>
+</head>
+<body>
+
+<p><a href="/">Home</a></p>
+
+{% comment %}
+
+{{ nom_de_variable }} est la manière de dire à Django d'insérer ici le contenu
+de la variable nommée "nom_de_variable". Cette variable est disponible dans
+le template si vous l'avez définie dans le contexte du template au niveau de
+la vue.
+
+{% endcomment %}
+
+<h1>Hello {{ name }}</h1>
+
+{% comment %}
+    Ceci est un commentaire de template Django. Ils n'apparaissent pas dans
+    le rendu final.
+{% endcomment %}
+
+
+</body>
+</html>
+
